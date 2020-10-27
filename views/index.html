@@ -1,5 +1,9 @@
 <html>
 <head>
+<!-- Compiled and minified CSS -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">  
+<!--Import Google Icon Font-->
+<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">  
 <title>Session Management in NodeJS using Node and Express</title>
 <script src="//ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
 <script>
@@ -21,8 +25,46 @@ $(document).ready(function(){
 </script>
 </head>
 <body>
-<input type="email" size="40" placeholder="Type your email" id="email"><br />
-<input type="password" size="40" placeholder="Type your password" id="password"><br />
-<input type="button" value="Submit" id="submit">
+<div class="section"></div>
+<main>
+<center>
+<h5 class="indigo-text text-darken-4">Please, login into your account</h5>
+<div class="section"></div>
+<div class="row">
+<div class="container">
+<div class="z-depth-1 grey lighten-4 row" style="display: inline-block; padding: 32px 48px 0px 48px; border: 1px solid #EEE;">
+<div class="col s12">
+<div class='row'>
+<div class='col s12'>
+</div>
+</div>
+<div class="row">
+<div class="input-field col s12">   
+  <input type="email" size="40" placeholder="" id="email" name="email">
+  <label for="email">Enter your email</label>   
+</div> 
+</div>
+<div class="row">
+<div class="input-field col s12">    
+  <input type="password" size="40" placeholder="" id="password" name="password">
+  <label for="password">Enter your password</label>  
+</div>
+</div>
+<br/>
+<center>
+<div class="row">
+<button class="btn " type="button" id="submit">Submit
+    <i class="material-icons right">send</i>
+</button>
+</div>
+</center>
+</div>
+</div>
+</div>   
+</div>  
+</center> 
+<div class="section"></div>
+<div class="section"></div>
+</main>
 </body>
 </html>

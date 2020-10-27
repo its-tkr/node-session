@@ -1,3 +1,12 @@
+const functions = require('firebase-functions');
+
+// // Create and Deploy Your First Cloud Functions
+// // https://firebase.google.com/docs/functions/write-firebase-functions
+//
+// exports.helloWorld = functions.https.onRequest((request, response) => {
+//   functions.logger.info("Hello logs!", {structuredData: true});
+//   response.send("Hello from Firebase!");
+// });
 const express = require('express');
 const session = require('express-session');
 const bodyParser = require('body-parser');
@@ -10,7 +19,6 @@ app.use(bodyParser.urlencoded({extended: true}));
 app.use(express.static(__dirname + '/views'));
 
 var sess; // global session, NOT recommended
-
 
 router.get('/',(req,res) => {
     sess = req.session;
